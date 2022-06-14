@@ -1,0 +1,5 @@
+data link: https://pan.baidu.com/s/14AYOdCPfpUomqcjqlSNqCg?pwd=5ddu 
+Extraction code：5ddu
+You need to unzip the folder '代码和数据' in the link
+train set: /第二篇论文Prototypical Network Based on Manhattan Distance/train.npy
+test set:  /第二篇论文Prototypical Network Based on Manhattan Distance/test.npy

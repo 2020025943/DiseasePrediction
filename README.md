@@ -1,7 +1,7 @@
 DiseasePrediction
 =======================
 
-This project is a collection of my dissertation projects. The first paper, Research on Disease Prediction Based on Improved DeepFM and IoMT: We adopt the modified DeepFM to predict hepatitis. The second paper, Prototypical Network Based on Manhattan Distance: We adopt the Protopical Network in few-shot learning to classify generic image datasets. The third paper, FMPNN in Digital Twins Smart Healthcare: We predict patients with or without stroke. The proposed models have excellent performance and can be better used in disease prediction.  
+This project is a collection of my dissertation projects. The first paper, Research on Disease Prediction Based on Improved DeepFM and IoMT: We adopt the modified DeepFM to predict hepatitis. The second paper, Prototypical Network Based on Manhattan Distance: We adopt the Protopical Network in few-shot learning to classify generic image datasets. The third paper, FMPNN in Digital Twins Smart Healthcare: We predict patients with or without stroke. The forth paper, ENFM: Extreme Neural Factorization Machine for Disease Prediction: A new model called Extreme Neural Factorization Machine (ENFM) has been proposed for the detection of depression. The proposed models have excellent performance and can be better used in disease prediction. 
 
 Research on Disease Prediction Based on Improved DeepFM and IoMT
 -------------------
@@ -138,3 +138,25 @@ FMPNN adds a second-order part on the basis of PNN, which can better capture the
 (4) Upload the code to jupyter  
 (5) Open the code and click Run to run  
 (6) The final output is the evaluation result and the AUC and loss function diagram on the corresponding training set and test set  
+
+ENFM: Extreme Neural Factorization Machine for Disease Prediction
+-------------------
+### Code:  
+Use tensorflow2.0 environment.  
+
+The models are implemented using the deepctr package. This research uses the deepctr package to implement the DeepFM model. This package is an easy-to-use and scalable deep learning click-through rate prediction algorithm package developed by Weichen Shen, a computer master from Zhejiang University and a current Alibaba’s algorithm engineer. It can quickly build a CTR prediction algorithm from existing components. model. It can quickly build a click-through rate prediction algorithm model from existing components.  
+
+Deepctr abstracts and summarizes the structure of the existing CTR prediction model based on deep learning, and adopts the idea of modularization in the design process. Each module itself has high reusability, and each module is independent of each other. The CTR prediction model based on deep learning can be divided into the following four modules according to the functions of the internal components of the model: input module, embedding module, feature extraction module, and prediction output module.  
+
+The Bi-Interaction Layer in Neural Factorization Machine (NFM) enables a perfect interface between FM and DNN, thus combining FM's ability to model low-order feature interactions and DNN's ability to learn high-order feature interactions and nonlinearities. eXtreme DeepFM (xDeepFM) replaces the Cross Network inside the Deep&Cross (DCN) with this Compressed Interaction Network (CIN), which makes the network capable of learning both explicit and implicit higher-order feature interactions (explicitly by the CIN and implicitly by the DNN). Combining the features of the above models, this work applies the Bi-Interaction Layer to xDeepFM respectively, and proposes a Click-Through-Rate (CTR) prediction model, Extreme Neural Factorization Machine (ENFM), and applies it to depression diagnosis to improve the original efficiency of depression diagnosis. This work will be tested on data (small amount of data and a large number of missing values, which are more difficult to train) from 638 depression-related patients treated in the psychology department of Qingdao Municipal Hospital in the last five years from 2017-2021, and compared with existing excellent and advanced models.
+
+### Configuration method:  
+(1) Configure the tensorflow2.0 environment (mainly on the command line: pip install tensorflow==2.0)  
+(2) Enter pip install deepctr on the command line to download the necessary deepctr package  
+(3) Put the data set in the location where the file is read in the code  
+(4) Upload the code to jupyter  
+(5) Open the code and click Run to run  
+(6) The final output is the evaluation result and the AUC and loss function diagram on the corresponding training set and test set  
+
+
+
